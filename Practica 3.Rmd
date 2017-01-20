@@ -23,8 +23,8 @@ library(picante)
 2. Open your tree, edit and plot
 
 ```{r}
-mytree <- read.nexus("sequencedef.nex.con")
-#mytree <- read.tree("RAxML_bipartitions.sequencedef.tre")
+mytree <- read.nexus("sequencedef.nex.con.tre")
+mytree <- read.tree("RAxML_bipartitions.sequencedef.tre")
 mytree
 plot(mytree)
 plot(mytree, cex = 0.7)
@@ -41,10 +41,11 @@ plot(mytree, cex = 0.5)
 ```{r}
 mydata <- read.csv("mydata.txt", sep = ";")
 mydata
+rownames(mydata) = mydata[,1]
 plot(mytree,use.edge.length=FALSE, label.offset=1.3, no.margin=TRUE, cex=0.5)
 co<-c("blue","red")
-tiplabels(pch=22, bg=co[as.numeric(mydata[,3]+1)], col=co[as.numeric(mydata[,3]+1)], cex=0.5, adj=0.5)
-tiplabels(pch=22, bg=co[as.numeric(mydata[,4]+1)], col=co[as.numeric(mydata[,4]+1)], cex=0.5, adj=1)
+tiplabels(pch=22, bg=co[as.numeric(mydata[mytree$tip.label,3]+1)], col=co[as.numeric(mydata[mytree$tip.label,3]+1)], cex=0.5, adj=0.5)
+tiplabels(pch=22, bg=co[as.numeric(mydata[mytree$tip.label,4]+1)], col=co[as.numeric(mydata[mytree$tip.label,4]+1)], cex=0.5, adj=1)
 
 ```
 

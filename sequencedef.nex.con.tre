@@ -1,0 +1,99 @@
+#NEXUS
+[R-package APE, Thu Jan 19 12:59:36 2017]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 43;
+	TAXLABELS
+		Cynodon_dactylon
+		Phalaris_coerulescens
+		Avena_sterilis
+		Aegilops_speltoides
+		Bromus_commutatus
+		Bromus_madritensis
+		Muscari_neglectum
+		Gynandriris_sisyrinchium
+		Allium_ampeloprasum
+		Polygonum_filicaule
+		Polygonum_aviculare
+		Rumex_conglomeratus
+		Sanguisorba_officinalis
+		Geranium_dissectum
+		Geranium_molle
+		Erodium_malacoides
+		Erodium_moschatum
+		Raphanus_raphanistrum
+		Diplotaxis_catholica
+		Malva_sylvestris
+		Euphorbia_serpens
+		Euphorbia_helioscopia
+		Euphorbia_exigua
+		Medicago_polymorpha
+		Trifolium_lappaceum
+		Trifolium_campestre
+		Echium_plantagineum
+		Plantago_lagopus
+		Beta_vulgaris
+		Convolvulus_althaeoides
+		Convolvulus_arvensis
+		Anagallis_foemina
+		Anagallis_arvensis
+		Foeniculum_vulgare
+		Chrysanthemum_coronarium
+		Coleostephus_myconis
+		Chamaemelum_nobile
+		Crepis_vesicaria
+		Leontodon_hispidus
+		Hedypnois_rhagadioloides
+		Calendula_arvensis
+		Centaurea_stoebe
+		Cichorium_intybus
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Cynodon_dactylon,
+		2	Phalaris_coerulescens,
+		3	Avena_sterilis,
+		4	Aegilops_speltoides,
+		5	Bromus_commutatus,
+		6	Bromus_madritensis,
+		7	Muscari_neglectum,
+		8	Gynandriris_sisyrinchium,
+		9	Allium_ampeloprasum,
+		10	Polygonum_filicaule,
+		11	Polygonum_aviculare,
+		12	Rumex_conglomeratus,
+		13	Sanguisorba_officinalis,
+		14	Geranium_dissectum,
+		15	Geranium_molle,
+		16	Erodium_malacoides,
+		17	Erodium_moschatum,
+		18	Raphanus_raphanistrum,
+		19	Diplotaxis_catholica,
+		20	Malva_sylvestris,
+		21	Euphorbia_serpens,
+		22	Euphorbia_helioscopia,
+		23	Euphorbia_exigua,
+		24	Medicago_polymorpha,
+		25	Trifolium_lappaceum,
+		26	Trifolium_campestre,
+		27	Echium_plantagineum,
+		28	Plantago_lagopus,
+		29	Beta_vulgaris,
+		30	Convolvulus_althaeoides,
+		31	Convolvulus_arvensis,
+		32	Anagallis_foemina,
+		33	Anagallis_arvensis,
+		34	Foeniculum_vulgare,
+		35	Chrysanthemum_coronarium,
+		36	Coleostephus_myconis,
+		37	Chamaemelum_nobile,
+		38	Crepis_vesicaria,
+		39	Leontodon_hispidus,
+		40	Hedypnois_rhagadioloides,
+		41	Calendula_arvensis,
+		42	Centaurea_stoebe,
+		43	Cichorium_intybus
+	;
+	TREE * UNTITLED = [&U] (((((((((((39:0.003946068,40:0.002312764):0.011532392,38:0.01780715467):0.00327818,((36:0.007792550667,37:0.009206808):0.0061858,35:0.01026099467):0.01797316267):0.004085825333,43:0.00949484):0.002777801333,41:0.016806708,42:0.01394363067):0.02857057067,34:0.04279188933):0.01394986933,(32:0.002830289333,33:0.002412574667):0.07963615067,(27:0.08800416133,28:0.088620824):0.01047703067,(30:0.004173594667,31:0.008759706667):0.058129172):0.002618262667,(((10:0.02999750533,11:0.02365568267):0.007173441333,12:0.006946782667):0.08848158933,29:0.07054784267):0.01622974533,((16:0.01012559733,17:0.013473356):0.005640613333,(14:0.01246037067,15:0.01005257067):0.01373534267):0.062835836,(24:0.02427131733,25:0.02481590533,26:0.018231256):0.07592521867,((22:0.01115602667,23:0.005059452):0.006576888,21:0.02017748933):0.039332688,(18:0.01562487333,19:0.009863245333):0.08194049067,13:0.07304013733,20:0.06618066133):0.05000994267,((7:0.04551177867,9:0.04448753467):0.002823153333,8:0.039448964):0.02063899333):0.138875628,(2:0.004005804,3:0.01050613067):0.003602916):0.00821772,((5:0.004838034667,6:0.004225481333):0.002239013333,4:0.005390881333):0.01196793067,1:0.04374056267);
+END;
