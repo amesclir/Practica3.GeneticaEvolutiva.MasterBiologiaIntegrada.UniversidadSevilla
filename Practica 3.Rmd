@@ -24,8 +24,10 @@ library(picante)
 
 ```{r}
 mytree <- read.nexus("sequencedef.nex.con")
+#mytree <- read.tree("RAxML_bipartitions.sequencedef.tre")
+mytree
 plot(mytree)
-plot(mytree, cex = 0.5)
+plot(mytree, cex = 0.7)
 nodelabels()
 mytree <- root(mytree, node = 45)
 mytree <- root(mytree, node = 45)
@@ -63,7 +65,7 @@ comdist(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=F)
 comdistnt(t(mydata[,-c(1,2)]), cophenetic(mytree), abundance.weighted=F,exclude.conspecifics = T)
 
 comm.phylo.cor.r <- comm.phylo.cor(t(mydata[,-c(1,2)]), mytree, metric="cij",null.model="sample.taxa.labels")
-
+#negative clustering!!!! (positive overdispersion)
 par(mai=c(1.02,0.82,0.82,0.42))
 hist(comm.phylo.cor.r$random.corrs)
 abline(v=comm.phylo.cor.r$obs.corr)
