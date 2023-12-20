@@ -80,18 +80,6 @@ colnames(myresults2) <- c("PD", "SR", "MPD", "MNTD")
 myresults2
 write.table(myresults2, file = "diversity_index_results.txt")
 
-mycomdist <- comdist(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=T)
-library(cluster)
-mycomdist.clusters <- hclust(mycomdist)
-plot(mycomdist.clusters, main = "Dendrogram based on beta MPD")
-
-mycomdistnt1 <- comdistnt(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=T, exclude.conspecifics = T)
-mycomdistnt1.clusters <- hclust(mycomdistnt1)
-plot(mycomdistnt1.clusters, main = "Dendrogram based on beta MNTD excluding conspecifics")
-
-mycomdistnt2 <- comdistnt(t(mydata[,-c(1)]), cophenetic(mytree), abundance.weighted=T, exclude.conspecifics = T)
-mycomdistnt2.clusters <- hclust(mycomdistnt2)
-plot(mycomdistnt2.clusters, main = "Dendrogram based on beta MNTD including conspecifics")
 
 ```
 
